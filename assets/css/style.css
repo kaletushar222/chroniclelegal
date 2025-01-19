@@ -117,7 +117,7 @@ nav.navbar.bootsnav {
 }
 
 /*.navbar-brand*/
-.navbar-header a.navbar-brand,.navbar-header a.navbar-brand:hover,.navbar-header a.navbar-brand:focus {
+.navbar-header a.navbar-brand,.navbar-header,.navbar-header a.navbar-brand:focus {
     display: flex;
     color: #895129;
     font-size: 20px;
