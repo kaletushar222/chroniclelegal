@@ -118,12 +118,15 @@ nav.navbar.bootsnav {
 
 /*.navbar-brand*/
 .navbar-header a.navbar-brand,.navbar-header a.navbar-brand:hover,.navbar-header a.navbar-brand:focus {
-    display: inline-block;
+    display: flex;
     color: #895129;
     font-size: 20px;
     font-weight: 600;
-    padding: 33px 0px 57px;
     text-transform: uppercase;
+}
+
+.navbar-brand span {
+    padding: 15px 0px 57px;
 }
 /*.navbar-brand*/
 
@@ -928,3 +931,4 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
   .why-us ul {
     list-style: unset;
   }
+  
