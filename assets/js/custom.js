@@ -43,6 +43,20 @@ $(document).ready(function(){
 		//=============
 
 		$('li.smooth-menu a').bind("click", function(event) {
+			var getNav = $("nav.navbar.bootsnav"),
+				getIn = getNav.find("ul.nav").data("in"),
+                getOut = getNav.find("ul.nav").data("out");
+				
+			$(".fa", this).toggleClass("fa-bars");
+            $(".fa", this).toggleClass("fa-times");
+			$('li.dropdown', this).removeClass("on");
+			$(".dropdown-menu", this).stop().fadeOut();
+			$(".dropdown-menu", this).removeClass(getIn);
+			$(".col-menu", this).removeClass("on");
+			$(".col-menu .content", this).stop().fadeOut();
+			$(".col-menu .content", this).removeClass(getIn);
+
+			console.log("her 44");
 			event.preventDefault();
 			var anchor = $(this);
 			$('html, body').stop().animate({

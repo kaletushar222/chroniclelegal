@@ -1,13 +1,3 @@
-// ------------------------------------------------------------------------------ //
-//
-// Template name : Bootsnav - Multi Purpose Header
-// Categorie : Bootstrap Menu in CSS
-// Author : adamnurdin01
-// Version : v.1.2
-// Created : 2016-06-02
-// Last update : 2016-10-19
-//
-// ------------------------------------------------------------------------------ //
 
 (function ($) {
 	"use strict";
@@ -325,6 +315,8 @@
                 $(".navbar-toggle").each(function(){
                     $(this).off("click");
                     $(this).on("click", function(){
+                        console.log("asdfasd")
+
                         $(".fa", this).toggleClass("fa-bars");
                         $(".fa", this).toggleClass("fa-times");
                         cleanOpen();
