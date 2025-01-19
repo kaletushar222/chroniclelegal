@@ -123,10 +123,11 @@ nav.navbar.bootsnav {
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
+    margin-top: 8px;
 }
 
 .navbar-brand span {
-    padding: 15px 0px 57px;
+    padding: 11px 0px 0px 16px;
 }
 /*.navbar-brand*/
 
